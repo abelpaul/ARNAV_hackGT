@@ -12,5 +12,6 @@ import Foundation
 struct ApplicationServices {
     var navService: NavigationService
     var locationService: LocationService
+
 }
 
