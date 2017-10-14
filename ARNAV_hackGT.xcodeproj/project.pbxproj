@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		501CFC701F91B38800F136FC /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501CFC6F1F91B38800F136FC /* Navigation.storyboard */; };
 		501CFC721F91B57D00F136FC /* MatrixHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501CFC711F91B57D00F136FC /* MatrixHelper.swift */; };
+		501CFC741F91B61C00F136FC /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501CFC731F91B61C00F136FC /* LocationService.swift */; };
+		501CFC761F91B65700F136FC /* LocationServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501CFC751F91B65700F136FC /* LocationServiceDelegate.swift */; };
 		506D56FA1F91AA4F0095F06D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D56F91F91AA4F0095F06D /* AppDelegate.swift */; };
 		506D56FC1F91AA4F0095F06D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 506D56FB1F91AA4F0095F06D /* art.scnassets */; };
 		506D56FE1F91AA4F0095F06D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D56FD1F91AA4F0095F06D /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 /* Begin PBXFileReference section */
 		501CFC6F1F91B38800F136FC /* Navigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
 		501CFC711F91B57D00F136FC /* MatrixHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixHelper.swift; sourceTree = "<group>"; };
+		501CFC731F91B61C00F136FC /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		501CFC751F91B65700F136FC /* LocationServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceDelegate.swift; sourceTree = "<group>"; };
 		506D56F61F91AA4F0095F06D /* ARNAV_hackGT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARNAV_hackGT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506D56F91F91AA4F0095F06D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		506D56FB1F91AA4F0095F06D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				50B014A51F91AC5600B1E75A /* Helpers */,
+				501CFC731F91B61C00F136FC /* LocationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				501CFC711F91B57D00F136FC /* MatrixHelper.swift */,
+				501CFC751F91B65700F136FC /* LocationServiceDelegate.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -351,7 +357,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				501CFC721F91B57D00F136FC /* MatrixHelper.swift in Sources */,
+				501CFC761F91B65700F136FC /* LocationServiceDelegate.swift in Sources */,
 				506D56FE1F91AA4F0095F06D /* ViewController.swift in Sources */,
+				501CFC741F91B61C00F136FC /* LocationService.swift in Sources */,
 				506D56FA1F91AA4F0095F06D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
