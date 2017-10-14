@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="cJ3-NO-fz8">
+            <objects>
+                <viewController storyboardIdentifier="StartViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jiv-cQ-VND" customClass="StartViewController" customModule="ARKitNavigationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wUy-AL-nfc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Icq-Ol-Ovs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="677"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Icq-Ol-Ovs" firstAttribute="centerX" secondItem="53R-CJ-9CP" secondAttribute="centerX" id="5qn-ZA-7ER"/>
+                            <constraint firstItem="Icq-Ol-Ovs" firstAttribute="centerY" secondItem="53R-CJ-9CP" secondAttribute="centerY" id="cq8-VF-l16"/>
+                            <constraint firstItem="Icq-Ol-Ovs" firstAttribute="width" secondItem="wUy-AL-nfc" secondAttribute="width" id="jqz-GI-UdF"/>
+                            <constraint firstItem="Icq-Ol-Ovs" firstAttribute="height" secondItem="wUy-AL-nfc" secondAttribute="height" constant="10" id="qX7-Wq-2Wo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="53R-CJ-9CP"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Icq-Ol-Ovs" id="0VG-Wd-7Na"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0fa-vD-JTj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

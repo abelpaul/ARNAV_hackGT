@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHR-0i-1gR">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lel-PG-pIQ" customClass="ViewController" customModule="ARKitNavigationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Iz-Us-XAf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rAe-fI-kcZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333"/>
+                                <subviews>
+                                    <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EfV-M0-28Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="333"/>
+                                    </arscnView>
+                                </subviews>
+                            </stackView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eJY-1k-svy">
+                                <rect key="frame" x="0.0" y="333" width="375" height="334"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="334" id="euU-g8-23U"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNW-OE-CHx">
+                                <rect key="frame" x="0.0" y="621" width="74" height="34"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.30364087709999998" green="0.52067719670000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.30364087709999998" green="0.52067719670000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="Lel-PG-pIQ" eventType="touchUpInside" id="Lxi-96-TzE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rAe-fI-kcZ" firstAttribute="top" secondItem="4Iz-Us-XAf" secondAttribute="top" id="0dB-bS-NDJ"/>
+                            <constraint firstItem="eJY-1k-svy" firstAttribute="top" secondItem="rAe-fI-kcZ" secondAttribute="bottom" id="5FO-LL-CRo"/>
+                            <constraint firstItem="rAe-fI-kcZ" firstAttribute="trailing" secondItem="eJY-1k-svy" secondAttribute="trailing" id="BjZ-BF-K31"/>
+                            <constraint firstItem="eJY-1k-svy" firstAttribute="bottom" secondItem="YR8-XW-L71" secondAttribute="bottom" id="Ev2-LQ-46K"/>
+                            <constraint firstItem="rAe-fI-kcZ" firstAttribute="leading" secondItem="4Iz-Us-XAf" secondAttribute="leading" id="NOx-PM-Qv4"/>
+                            <constraint firstItem="rAe-fI-kcZ" firstAttribute="leading" secondItem="eJY-1k-svy" secondAttribute="leading" id="SPH-xo-hng"/>
+                            <constraint firstItem="BNW-OE-CHx" firstAttribute="height" secondItem="eJY-1k-svy" secondAttribute="height" multiplier="0.1" id="aES-BX-uBi"/>
+                            <constraint firstItem="BNW-OE-CHx" firstAttribute="top" secondItem="eJY-1k-svy" secondAttribute="bottom" constant="-46" id="ezz-dU-Fdp"/>
+                            <constraint firstAttribute="trailing" secondItem="rAe-fI-kcZ" secondAttribute="trailing" id="h30-Tf-mMi"/>
+                            <constraint firstItem="BNW-OE-CHx" firstAttribute="width" secondItem="eJY-1k-svy" secondAttribute="width" multiplier="0.21" id="kql-I2-UdP"/>
+                            <constraint firstItem="BNW-OE-CHx" firstAttribute="leading" secondItem="eJY-1k-svy" secondAttribute="leading" id="pss-SZ-8si"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YR8-XW-L71"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="eJY-1k-svy" id="FVl-W1-ODK"/>
+                        <outlet property="sceneView" destination="EfV-M0-28Q" id="uQL-ym-Nxe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vIB-3Y-OMm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
