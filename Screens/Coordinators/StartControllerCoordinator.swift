@@ -55,4 +55,3 @@ extension StartControllerCoordinator: StartViewControllerDelegate {
         delegate?.transitionCoordinator(type: .app)
     }
 }
-
